@@ -4,23 +4,57 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    color: #f0f0f0;
     margin: 0;
 }
 
 nav div {
     padding: 20px;
-    background-color: black;
-    font-size: 30px;
-    color: white;
+    background-color: #0C0910;
+    font-size: 20px;
+    align-content: center;
 }
 
 .coming-soon {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30vh;
+    margin-top: 100px;
     padding: 20px;
-    width: 200px;
-    color: white;
-    font-size: 50px;
-    background-color: black;
+    width: 800px;
+    background-color: rgba(12, 9, 16, 0.7);
 }
+
+.coming-soon .content {
+    opacity: 100%;
+}
+
+.coming-soon h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.coming-soon .blurb {
+    width: 550px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.via-luino {
+    flex-grow: 1;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-cover {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+/*https://coolors.co/61e294-7bcdba-9799ca-bd93d8-b47aea*/
+/*https://coolors.co/a393bf-9882ac-73648a-453750-0c0910*/
+/*https://coolors.co/22162b-451f55-724e91-e54f6d-f8c630*/
