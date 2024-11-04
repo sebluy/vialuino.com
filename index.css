@@ -1,0 +1,26 @@
+body {
+    font-family: Garamond, serif;
+    background-image: url("bulgaria.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+
+nav div {
+    padding: 20px;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+}
+
+.coming-soon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+    padding: 20px;
+    width: 200px;
+    color: white;
+    font-size: 50px;
+    background-color: black;
+}
