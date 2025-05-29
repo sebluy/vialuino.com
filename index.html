@@ -14,9 +14,9 @@
 </nav>
 
 <div class="coming-soon">
-    <h1>Coming soon...</h1>
+    <h1>Coming April 21, 2026!</h1>
     <div class="content">
-        <img class="book-cover" src="all-the-scattered-stars.png" alt="All the Scattered Stars"/>
+        <img class="book-cover" src="all-the-scattered-stars.jpg" alt="All the Scattered Stars"/>
         <div class="blurb">
             <p>
                 <i>The glitter of Venice’s lights hides a dark truth: when the floodwaters rise, no one is safe.</i>
@@ -34,10 +34,33 @@
                 is trying to tell her, protect those she loves, and uncover the truth of her past before it’s
                 too late—because Venice is sinking. Tonight.
             </p>
+
+        </div>
+        <img class="author-photo" src="author-photo.jpg" alt="Author Photo"/>
+
+        <div class="blurb">
+            <p>
+                Raised in the wilds of Western Massachusetts, Via Luino is the author of over 25 published short stories and poems and has been a Pushcart Prize nominee.
+                She holds an MFA in fiction writing from the University of New Hampshire and has worked as an English teacher overseas.
+                She is now a youth services librarian by day and an avid reader and writer of all kinds of fantasy by night.
+                She lives just north of Boston with her spouse and their two dogs, an elderly seeing-eye dog flunky and a spry young rescue.
+                All the Scattered Stars is her debut novel.
+            </p>
+
+            Contact: <a id="contact">Contact Me</a>
         </div>
     </div>
 </div>
 
 </body>
+
+<script>
+    var o = 'dmlhbWx1aW5vQGdtYWlsLmNvbQ==';
+    var e = atob(o);
+    var el = document.getElementById('contact');
+    el.href = 'mailto:' + e;
+    el.innerText = e;
+</script>
+
 </html>
 
