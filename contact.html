@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Via Luino</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <img src="logo.svg" alt="Via Luino"/>
+    <a href="books.html">Books</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="page">
+    <div class="blurb">
+        <h3><i>Connect with Via<i></h3>
+
+        <img class="divider" src="divider.png" alt="Divider"/>
+
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/via_the_word_witch/">
+                <img src="instagram.svg" alt="Instagram"/>
+            </a>
+            <a href="https://www.threads.com/@via_the_word_witch">
+                <img src="threads.svg" alt="Threads"/>
+            </a>
+            <a href="https://bsky.app/profile/viathewordwitch.bsky.social">
+                <img src="bluesky.svg" alt="Bluesky"/>
+            </a>
+            <a id="contact">
+                <img src="email.svg" alt="Email"/>
+            </a>
+        </div>
+
+        <img class="divider" src="divider.png" alt="Divider"/>
+
+    </div>
+</div>
+
+</body>
+
+<script>
+    var o = 'dmlhbWx1aW5vQGdtYWlsLmNvbQ==';
+    var e = atob(o);
+    var el = document.getElementById('contact');
+    el.href = 'mailto:' + e;
+</script>
+
+</html>
+
