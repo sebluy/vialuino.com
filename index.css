@@ -5,9 +5,12 @@ body {
     min-height: 100vh;
     color: #f0f0f0;
     margin: 0;
+    position: absolute;
+    width: 100%;
 }
 
 nav {
+    display: flex;
     padding: 5px;
     justify-content: center;
     align-items: center;
@@ -26,18 +29,41 @@ nav a {
     padding: 5px 50px;
     text-decoration: none;
     transition-duration: 200ms;
-    box-sizing: content-box;
     border-radius: 10px;
 }
 
-nav a:hover:not(:has(img)) {
+@media (width <= 1000px) {
+
+    nav {
+        height: 100px;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    nav img {
+        height: 70px;
+    }
+
+    div.contact-icons img {
+        height: 50px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+}
+
+nav a.nav-link:hover {
     background-color: #153129;
     color: #d0b671;
 }
 
 .page {
     margin-top: 50px;
-    padding: 20px 40px;
+    padding: 20px 10px;
     background-color: white;
     color: black;
 }
@@ -56,6 +82,10 @@ nav a:hover:not(:has(img)) {
 .image-with-blurb {
     display: flex;
     align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .blurb {
@@ -63,17 +93,13 @@ nav a:hover:not(:has(img)) {
     vertical-align: top;
     padding-left: 40px;
     padding-right: 40px;
+    max-width: 800px;
 }
 
 .via-luino {
     flex-grow: 1;
     text-align: center;
     font-size: 30px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
 }
 
 .book-cover {
@@ -88,6 +114,7 @@ nav {
     width: 300px;
     object-fit: contain;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 p.coming-soon {
@@ -108,20 +135,19 @@ p.coming-soon {
 .link-group a {
     color: black;
     font-weight: bold;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 .fancy-name {
     width: 328px;
     display: block;
     margin: auto;
-    padding-right: 300px;
     scale: 1;
 }
 
 .quote {
-    width: 500px;
+    max-width: 500px;
     font-style: italic;
     margin-left: auto;
 }
@@ -130,6 +156,7 @@ p.coming-soon {
     height: 100px;
     display: block;
     margin: auto;
+    max-width: 100%;
 }
 
 .center-text {
