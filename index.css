@@ -57,9 +57,11 @@ nav a {
 
 }
 
-nav a.nav-link:hover {
-    background-color: #153129;
-    color: #d0b671;
+@media (min-width: 1000px) {
+    nav a.nav-link:hover {
+        background-color: #153129;
+        color: #d0b671;
+    }
 }
 
 .page {
@@ -90,11 +92,10 @@ nav a.nav-link:hover {
 }
 
 .blurb {
-    flex-grow: 1;
     vertical-align: top;
     padding-left: 40px;
     padding-right: 40px;
-    max-width: 800px;
+    width: 600px;
 }
 
 .via-luino {
@@ -103,7 +104,7 @@ nav a.nav-link:hover {
     font-size: 30px;
 }
 
-.book-cover {
+.blurb-img {
     height: 400px;
     width: 300px;
     object-fit: contain;
@@ -118,7 +119,7 @@ nav a.nav-link:hover {
     margin-bottom: 20px;
 }
 
-p.coming-soon {
+p.footnote {
     font-style: italic;
     font-size: 15px;
     text-align: right;
@@ -127,10 +128,7 @@ p.coming-soon {
 .link-group {
     display: flex;
     justify-content: center;
-}
-
-.link-group-vertical {
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .link-group a {
@@ -186,4 +184,12 @@ p.coming-soon {
     height: 50px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+a {
+    color: black;
+}
+
+a:active {
+    color: black;
 }
